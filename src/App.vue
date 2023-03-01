@@ -1,15 +1,16 @@
 <template>
-  <div class="container">
-    <div v-for="item in card">
-      <img :src="item" />
-    </div>
-  </div>
+ <Home :data= card />
 </template>
 
 <script>
+import Home from './components/Home.vue'
+
 export default {
-  name: "App",
-  data() {
+  name: 'App',
+  components :{
+    Home,
+   },
+    data() {
     return {
       card: [
         "./src/assets/pexels-julius-silver-753325.jpg",
@@ -23,28 +24,4 @@ export default {
 </script>
 
 <style>
-* {
-   margin: 0;
- padding: 0;
-}
-html {
-  background: black;
-  overflow: hidden;
-  overflow-y: auto;
-
-}
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1rem;
-  width: 100%;
-  min-height: 100vh;
-  
-}
-img {
-  width: 300px; 
-  padding: 10px 0 10px 0;
-}
 </style>
