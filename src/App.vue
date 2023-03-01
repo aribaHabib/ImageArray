@@ -15,7 +15,7 @@ export default {
         "./src/assets/pexels-julius-silver-753325.jpg",
         "./src/assets/pexels-julius-silver-753337.jpg",
         "./src/assets/pexels-julius-silver-870711.jpg",
-         "./src/assets/pexels-julius-silver-753626.jpg",
+        "./src/assets/pexels-julius-silver-753626.jpg",
       ],
     };
   },
