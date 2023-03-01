@@ -1,27 +1,25 @@
 <template>
- <Home :data= card />
+  <Home :data="card" />
 </template>
 
 <script>
-import Home from './components/Home.vue'
+import Home from "./components/Home.vue";
+import img1 from "./assets/img1.jpg";
+import img2 from "./assets/img2.jpg";
+import img3 from "./assets/img3.jpg";
+import img4 from "./assets/img4.jpg";
 
 export default {
-  name: 'App',
-  components :{
+  name: "App",
+  components: {
     Home,
-   },
-    data() {
+  },
+  data() {
     return {
-      card: [
-        "./src/assets/pexels-julius-silver-753325.jpg",
-        "./src/assets/pexels-julius-silver-753337.jpg",
-        "./src/assets/pexels-julius-silver-870711.jpg",
-        "./src/assets/pexels-julius-silver-753626.jpg",
-      ],
+      card: [img1, img2, img3, img4],
     };
   },
 };
 </script>
 
-<style>
-</style>
+<style></style>
