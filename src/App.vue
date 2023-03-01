@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div v-for="item in card">
-      <img v-bind:src="item" />
+      <img :src="item" />
     </div>
   </div>
 </template>
@@ -14,8 +14,8 @@ export default {
       card: [
         "./src/assets/pexels-julius-silver-753325.jpg",
         "./src/assets/pexels-julius-silver-753337.jpg",
-        "./src/assets/pexels-julius-silver-753626.jpg",
         "./src/assets/pexels-julius-silver-870711.jpg",
+         "./src/assets/pexels-julius-silver-753626.jpg",
       ],
     };
   },
@@ -23,9 +23,15 @@ export default {
 </script>
 
 <style>
+* {
+   margin: 0;
+ padding: 0;
+}
 html {
   background: black;
   overflow: hidden;
+  overflow-y: auto;
+
 }
 .container {
   display: flex;
@@ -33,10 +39,12 @@ html {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  
 }
 img {
-  width: 300px;
+  width: 300px; 
+  padding: 10px 0 10px 0;
 }
 </style>
