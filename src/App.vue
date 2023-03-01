@@ -13,10 +13,10 @@ export default {
   data() {
     return {
       card: [
-        "./src/assets/img1.jpg",
-        "./src/assets/img2.jpg",
-        "./src/assets/img3.jpg",
-        "./src/assets/img4.jpg",
+        "/img/img1.jpg",
+        "/img/img2.jpg",
+        "/img/img3.jpg",
+        "/img/img4.jpg",
       ],
     };
   },
